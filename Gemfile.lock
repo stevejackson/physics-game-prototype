@@ -1,0 +1,49 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    binding_of_caller (0.6.8)
+    chingu (0.8.1)
+      crack
+      gosu (>= 0.7.25)
+      rest-client
+    chipmunk (5.3.4.5)
+    coderay (1.0.8)
+    columnize (0.3.6)
+    crack (0.3.1)
+    debugger (1.1.4)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.1.1)
+      debugger-ruby_core_source (~> 1.1.3)
+    debugger-linecache (1.1.2)
+      debugger-ruby_core_source (>= 1.1.1)
+    debugger-ruby_core_source (1.1.5)
+    gosu (0.7.45)
+    interception (0.3)
+    method_source (0.8.1)
+    mime-types (1.19)
+    pry (0.9.10)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.3.1)
+    pry-debugger (0.2.0)
+      debugger (~> 1.1.3)
+      pry (~> 0.9.9)
+    pry-rescue (0.13)
+      interception (>= 0.3)
+      pry
+    pry-stack_explorer (0.4.7)
+      binding_of_caller (~> 0.6.8)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    slop (3.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chingu
+  chipmunk
+  pry
+  pry-debugger
+  pry-rescue
+  pry-stack_explorer

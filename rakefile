@@ -1,0 +1,9 @@
+task :default => :debug
+
+task :debug do
+  sh %{rescue source/main.rb}
+end
+
+task :run do
+	sh %{ruby source/main.rb}
+end
