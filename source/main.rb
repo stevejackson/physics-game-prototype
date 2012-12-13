@@ -6,6 +6,7 @@ include Chingu
 require 'chipmunk'
 
 require './source/objects/ball'
+require './source/objects/quad'
 require './source/states/level_state'
 
 class Game < Chingu::Window
@@ -22,7 +23,7 @@ class Game < Chingu::Window
 
     push_game_state(LevelState.new(:window => self))
   end
-  
+
   def next_effect; pop_game_state; end
 end
 

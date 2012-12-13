@@ -3,24 +3,25 @@ class Ball < Chingu::GameObject
   
   def initialize(options)
     super
-    @window = options[:window]
     @image = Image["data/ball.png"]
-    
+  end
+
+  def setup
     @body = CP::Body.new(90, 75)
-    @body.p = vec2(options[:x], options[:y])
+    @body.p = vec2(self.x || 0, self.y || 0)
 
     @shape  = CP::Shape::Circle.new(@body, 10, CP::ZERO_VEC_2)
     @shape.collision_type = :foo
     @shape.e = 0
     @shape.u = 1 
 
-    @window.space.add_body(@body)
-    @window.space.add_shape(@shape)
+    $window.space.add_body(@body)
+    $window.space.add_shape(@shape)
   end
   
   def update
-    self.x = @body.p.x
-    self.y = @body.p.y
+    #self.x = @body.p.x
+    #self.y = @body.p.y
   end
 
   def draw
